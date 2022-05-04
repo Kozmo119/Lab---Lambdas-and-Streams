@@ -43,7 +43,7 @@ public class MVP {
      */
     public List<String> splitToAllCapsList(String input) {
 
-        return Stream.of(input.split(","))
+        return Stream.of(input.split(""))
                .map(String::toUpperCase)
                 .collect(Collectors.toList());
     }
